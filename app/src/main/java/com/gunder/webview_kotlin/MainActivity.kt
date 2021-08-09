@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         webView!!.loadUrl("https://www.kai.id/")
         var webSettings = webView!!.settings
         webSettings.javaScriptEnabled = true
+//        untuk mengaktifkan fitur dri bs yang belom muncul
+        webSettings.domStorageEnabled = true
     }
 
     override fun onBackPressed() {
